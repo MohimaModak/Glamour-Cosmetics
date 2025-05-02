@@ -7,9 +7,9 @@ import './index.css';
 import FeatureProduct from "./assets/Component/FeatureProduct/FeatureProduct";
 import Products from "./assets/Component/Products/Products";
 import Nailpolish from "./assets/Component/Nailpolish/Nailpolish";
-import Mascara from "./assets/Component/mascara/mascara";
 import Makeup from "./assets/Component/Makeup/Makeup";
 import Contact from "./assets/Component/Contact/Contact";
+import Mascara from "./assets/Component/mascara/mascara";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         element: <Nailpolish></Nailpolish>,
       },
       {
-        path: "/Mascara",
+        path: "/Masca",
         element: <Mascara></Mascara>,
       },
       {
