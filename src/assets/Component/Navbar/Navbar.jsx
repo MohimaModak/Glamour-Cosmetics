@@ -36,9 +36,6 @@ export default function Navbar() {
           <Link to="/Nailpolish" smooth={true} duration={1000} className="text-xl p-4 block" onClick={toggleButton}>
           Nail Polish
           </Link>
-          <Link to="/Mascara" smooth={true} duration={1000} className="text-xl p-4 block" onClick={toggleButton}>
-          Mascara
-          </Link>
           <Link to="/Contact" smooth={true} duration={1000} className="text-xl p-4 block" onClick={toggleButton}>
           Contact
           </Link>
@@ -61,9 +58,6 @@ export default function Navbar() {
               </Link>
               <Link to="/Nailpolish" smooth={true} duration={1000} className="text-xl hover: text-red-400 hover:underline">
               Nail Polish
-              </Link>
-              <Link to="/Mascara" smooth={true} duration={1000} className="text-xl hover: text-red-400 hover:underline">
-              Mascara
               </Link>
               <Link to="/Contact" smooth={true} duration={1000} className="text-xl hover: text-red-400 hover:underline">
               Contact

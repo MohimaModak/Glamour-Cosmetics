@@ -9,7 +9,6 @@ import Products from "./assets/Component/Products/Products";
 import Nailpolish from "./assets/Component/Nailpolish/Nailpolish";
 import Makeup from "./assets/Component/Makeup/Makeup";
 import Contact from "./assets/Component/Contact/Contact";
-import Mascara from "./assets/Component/mascara/mascara";
 
 const router = createBrowserRouter([
   {
@@ -31,10 +30,6 @@ const router = createBrowserRouter([
       {
         path: "/Nailpolish",
         element: <Nailpolish></Nailpolish>,
-      },
-      {
-        path: "/Masca",
-        element: <Mascara></Mascara>,
       },
       {
         path: "/Makeup",
