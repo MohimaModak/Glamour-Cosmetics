@@ -4,7 +4,7 @@ import "./Home.css"
 import FeatureProduct from '../FeatureProduct/FeatureProduct'
 import Products from '../Products/Products'
 import Makeup from '../Makeup/Makeup'
-import Mascara from '../mascara/mascara'
+// import Mascara from '../mascara/mascara'
 import Nailpolish from '../Nailpolish/Nailpolish'
 import Footer from '../Footer/Footer'
 import Contact from '../Contact/Contact'
@@ -29,7 +29,7 @@ export default function Home() {
       <FeatureProduct></FeatureProduct>
       <Products></Products>
       <Nailpolish></Nailpolish>
-      <Mascara></Mascara>
+      {/* <Mascara></Mascara> */}
       <Makeup></Makeup>
       <Contact></Contact>
       <Footer></Footer>
