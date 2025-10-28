@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-scroll';
 import lipstick from "../../../../src/Gallery/lipstick.webp";
 import lipstick2 from "../../../../src/Gallery/lipstick2.webp";
 import lipstick3 from "../../../../src/Gallery/lipstick3.jpeg";
@@ -38,10 +38,12 @@ export default function Products() {
                   {product.name}
                 </h2>
                 <p className="text-gray-600 font-bold mb-4">{product.price}</p>
-                <button className="bg-red-300 textshadow text-white px-6 py-2 rounded-full hover:bg-red-400 transition-all">
-                  Order Now
-                </button>
-              </div> 
+                <Link to='/Contact' smooth={true} duration={1000}>
+                  <button className="bg-red-300 textshadow text-white px-6 py-2 rounded-full hover:bg-red-400 transition-all">
+                    Order Now
+                  </button>
+                </Link>
+              </div>
             </div>
           ))}
         </div>
