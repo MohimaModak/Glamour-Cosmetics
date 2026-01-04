@@ -1,47 +1,84 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-red-100 text-gray-600 py-10 px-5">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        {/* Brand Info */}
+    <footer className="bg-neutral-950 text-white py-14 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        {/* Brand */}
         <div>
-          <h2 className="text-2xl text-red-400 font-semibold mb-4">Glamour Cosmetics</h2>
-          <p className="text-sm font-medium">
-            Elevate your beauty with our premium collection of lipsticks, nail polish, and mascara.
+          <h2 className="text-2xl lg:text-3xl font-semibold text-white mb-4 tracking-wide">
+            Billy Caputo
+          </h2>
+          <p className="text-base leading-relaxed">
+            Psychic guidance and relationship insights designed to bring clarity,
+            confidence, and meaningful connections into your life.
           </p>
         </div>
 
         {/* Navigation */}
         <div>
-          <h3 className="text-xl text-red-400 font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 font-medium">
-            <li><Link to="/" className="hover:underline">Home</Link></li>
-            <li><Link to="/Products" className="hover:underline">Lipsticks</Link></li>
-            <li><Link to="/Nailpolish" className="hover:underline">Nail Polish</Link></li>
-            <li><Link to="/Mascara" className="hover:underline">Mascara</Link></li>
+          <h3 className="text-2xl lg:text-3xl font-semibold text-white mb-4">
+            Quick Links
+          </h3>
+          <ul className="space-y-3 text-sm">
+            <li>
+              <Link className="hover:text-white transition">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-white transition">
+                Book
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-white transition">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 
-        {/* Contact & Social */}
+        {/* Contact */}
         <div>
-          <h3 className="text-xl text-red-400 font-semibold mb-4">Contact Us</h3>
-          <p className="text-sm mb-2 font-medium">Email: support@glamourcosmetics.com</p>
-          <p className="text-sm mb-4 font-medium">Phone: +1 (234) 567-890</p>
-          <div className="flex space-x-4">
-            <a href="#" className="text-red-400 font-semibold hover:underline">Instagram</a>
-            <a href="#" className="text-red-400 font-semibold hover:underline">Facebook</a>
-            <a href="#" className="text-red-400 font-semibold hover:underline">YouTube</a>
+          <h3 className="text-2xl lg:text-3xl font-semibold text-white mb-4">
+            Contact
+          </h3>
+          <p className="text-sm mb-2">
+            Phone: <a href="tel:2013155587" className="hover:text-white transition">201-315-5587</a>
+          </p>
+          <p className="text-sm mb-4">
+            Email: <span className="text-gray-300">gash66@aol.com
+            </span>
+          </p>
+
+          <div className="flex space-x-5">
+            <a
+              href="https://www.facebook.com/BillyCaputoPsychic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/billycaputo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition"
+            >
+              Instagram
+            </a>
           </div>
         </div>
 
       </div>
 
       {/* Bottom */}
-      <div className="mt-10 text-center font-medium text-sm border-t border-red-200 pt-4">
-        &copy; {new Date().getFullYear()} Glamour Cosmetics. All rights reserved.
+      <div className="mt-12 border-t border-neutral-800 pt-6 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Billy Caputo. All rights reserved.
       </div>
     </footer>
   );

@@ -1,79 +1,65 @@
 import React from 'react';
+import facebook from "../../../../src/Gallery/facebook.png";
+import instagram from "../../../../src/Gallery/instagram.png";
+import PhoneCall from "../../../../src/Gallery/PhoneCall.png";
 
 export default function Contact() {
   return (
-    <div id='/Contact' className="bg-red-200 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div
+      id="/Contact"
+      className="bg-gradient-to-br from-[#7a6908] via-[#6b4a03] to-neutral-950 py-16 px-4 sm:px-6 lg:px-8"
+    >
+      <div className="max-w-5xl mx-auto text-center">
         {/* Header Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold text-white textshadow">Contact Us</h2>
-          <p className="mt-4 text-lg text-gray-600 font-medium">We’re here to help. Reach out to us for questions, inquiries, or just to say hello!</p>
-        </div>
-
-        {/* Main Contact Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-          {/* Phone Section */}
-          <div className="p-8 rounded-2xl shadow-lg ">
-            <h3 className="text-3xl font-semibold text-white textshadow">Phone</h3>
-            <p className="mt-4 text-lg text-gray-600 font-medium">Call us for immediate assistance:</p>
-            <p className="mt-2 text-lg text-gray-600">
-              <a href="tel:+1234567890" className="text-gray-600 font-medium">
-                +1 (234) 567-890
-              </a>
-            </p>
-          </div>
-
-          {/* Email Section */}
-          <div className="p-8 rounded-2xl shadow-lg ">
-            <h3 className="text-3xl font-semibold text-white textshadow">Email</h3>
-            <p className="mt-4 text-lg text-gray-600 font-medium">For inquiries, drop us an email:</p>
-            <p className="mt-2 text-lg text-gray-600">
-              <a href="mailto:contact@glamourcosmetics.com" className="text-gray-600 font-medium">
-                contact@glamourcosmetics.com
-              </a>
-            </p>
-          </div>
-
-          {/* Social Media Section */}
-          <div className="p-8 rounded-2xl shadow-lg ">
-            <h3 className="text-3xl font-semibold text-white textshadow">Follow Us</h3>
-            <p className="mt-4 text-lg text-gray-600">Stay updated with our latest products and offers:</p>
-            <div className="mt-6 flex justify-center space-x-8">
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-4xl text-gray-600">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-4xl text-gray-600">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-4xl text-gray-600">
-                <i className="fab fa-twitter"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Location and Map Section */}
-        <div className="mt-12 p-8">
-          <h3 className="text-3xl font-semibold text-white textshadow">Our Location</h3>
-          <p className="mt-4 text-lg text-gray-600 font-medium">Visit us at our headquarters:</p>
-          <p className="mt-2 text-lg text-gray-600 font-medium">123 Glamour Ave, Suite 400, Fashion City, FC 12345</p>
-          <div className="mt-4 rounded-md shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.074998466717!2d-122.41941548468168!3d37.77492927975817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e42e9abff%3A0x838a04f9a6724961!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1635863752199!5m2!1sen!2sin"
-              width="100%" height="350" style={{ border: 0 }} allowFullScreen="" loading="lazy" className='rounded-md'
-            ></iframe>
-          </div>
-        </div>
-
-        {/* Working Hours Section */}
-        <div className="mt-12 text-center">
-          <h3 className="text-3xl font-semibold text-white textshadow">Our Working Hours</h3>
-          <p className="mt-4 text-lg text-gray-600 font-medium">We’re available during the following hours:</p>
-          <p className="mt-2 text-lg text-gray-600 font-medium">
-            Monday - Friday: 9:00 AM - 6:00 PM <br />
-            Saturday: 10:00 AM - 4:00 PM <br />
-            Sunday: Closed
+        <div className="mb-12">
+          <h2 className="text-5xl font-bold text-neutral-100 textshadow">
+            Contact Billy Caputo
+          </h2>
+          <p className="mt-4 text-lg text-neutral-100 font-medium">
+            Get in touch for psychic readings, book inquiries, or guidance.
           </p>
+        </div>
+
+        {/* Contact Options */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+          
+          {/* Call */}
+          <a
+            href="tel:2013155587"
+            className="flex flex-col items-center gap-3 hover:scale-105 transition-all"
+          >
+            <img src={PhoneCall} alt="Call Billy Caputo" className="w-16 h-16" />
+            <span className="text-lg font-semibold text-neutral-100">
+              Call: 201-315-5587
+            </span>
+          </a>
+
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com/BillyCaputoPsychic"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-3 hover:scale-105 transition-all"
+          >
+            <img src={facebook} alt="Facebook" className="w-16 h-16" />
+            <span className="text-lg font-semibold text-neutral-100">
+              Facebook
+            </span>
+          </a>
+
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/billycaputo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center gap-3 hover:scale-105 transition-all"
+          >
+            <img src={instagram} alt="Instagram" className="w-16 h-16" />
+            <span className="text-lg font-semibold text-neutral-100">
+              Instagram
+            </span>
+          </a>
+
         </div>
       </div>
     </div>

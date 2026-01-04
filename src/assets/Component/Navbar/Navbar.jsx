@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../../Gallery/logo.png"
+import logo from "../../../Gallery/icon2.png"
 import { Link } from "react-scroll";
 import "./Navbar.css";
 
@@ -16,28 +16,28 @@ export default function Navbar() {
         <div className="md:hidden  sm:block text-sm p-2" onClick={toggleButton}>
           <div className="cursor-pointer">
             <div>
-              <div className="w-8 h-1  bg-red-400"></div>
-              <div className="w-8 h-1 mt-1  bg-red-400"></div>
-              <div className="w-8 h-1 mt-1  bg-red-400"></div>
+              <div className="w-8 h-1  bg-neutral-100"></div>
+              <div className="w-8 h-1 mt-1  bg-neutral-100"></div>
+              <div className="w-8 h-1 mt-1  bg-neutral-100"></div>
             </div>
           </div>
         </div>
       </div>
       <div className={`mobile-menu ${toggle ? "open" : ""}`}>
-        <div className="navbar-links font-bold text-red-400">
+        <div className="navbar-links font-bold text-neutral-100">
           <div className="flex items-center justify-center"><img src={logo} className="w-10" />
-            <h1 className="font-bold  text-red-400 text-3xl text-center p-4">Beauty</h1></div>
+            <h1 className="font-bold  text-neutral-100 text-3xl text-center p-4">Love</h1></div>
           <Link to="/" smooth={true} duration={1000} className="text-xl p-4 block" onClick={toggleButton}>
             Home
           </Link>
           <Link to="/Products" smooth={true} duration={1000} className="text-xl p-4 block" onClick={toggleButton}>
-          Lipsticks
+            Book
           </Link>
           <Link to="/Nailpolish" smooth={true} duration={1000} className="text-xl p-4 block" onClick={toggleButton}>
-          Nail Polish
+            Author
           </Link>
           <Link to="/Contact" smooth={true} duration={1000} className="text-xl p-4 block" onClick={toggleButton}>
-          Contact
+            Contact
           </Link>
         </div>
       </div>
@@ -50,22 +50,30 @@ export default function Navbar() {
               <img src={logo} className="w-14" />
             </div>
             <div className="navbar-links lg:flex justify-center items-center gap-5">
-              <Link to="/" smooth={true} duration={1000} className="text-xl hover: text-red-400 hover:underline">
+              <Link to="/" smooth={true} duration={1000} className="text-2xl text hover: text-neutral-100 hover:underline">
                 Home
               </Link>
-              <Link to="/Products" smooth={true} duration={1000} className="text-xl hover: text-red-400 hover:underline">
-              Lipsticks
+              <Link to="/Products" smooth={true} duration={1000} className="text-2xl text hover: text-neutral-100 hover:underline">
+                Book
               </Link>
-              <Link to="/Nailpolish" smooth={true} duration={1000} className="text-xl hover: text-red-400 hover:underline">
-              Nail Polish
+              <Link to="/Nailpolish" smooth={true} duration={1000} className="text-2xl text hover: text-neutral-100 hover:underline">
+                Author
               </Link>
-              <Link to="/Contact" smooth={true} duration={1000} className="text-xl hover: text-red-400 hover:underline">
-              Contact
+              <Link to="/Contact" smooth={true} duration={1000} className="text-2xl text hover: text-neutral-100 hover:underline">
+                Contact
               </Link>
             </div>
             <div className="flex justify-center items-center">
-              <button className="text-lg text-white textshadow font-bold rounded py-2 px-4 bg-red-300">Order Now</button>
-            </div>
+              <a
+                href="https://www.paypal.com/ncp/payment/T54G287MTFMD8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-neutral-950 text-neutral-100 textshadow text-xl font-semibold px-10 py-3 rounded-full hover:bg-neutral-800 hover:text-neutral-100 transition-all">
+                  Buy Now
+                </button>
+              </a>           
+               </div>
           </nav>
         </div>
       </div>

@@ -1,53 +1,55 @@
-import { Link } from 'react-scroll';
-import lipstick from "../../../../src/Gallery/lipstick.webp";
-import lipstick2 from "../../../../src/Gallery/lipstick2.webp";
-import lipstick3 from "../../../../src/Gallery/lipstick3.jpeg";
-import lipstick4 from "../../../../src/Gallery/lipstick4.webp";
-import lipstick5 from "../../../../src/Gallery/lipstick5.jpeg";
-import lipstick6 from "../../../../src/Gallery/lipstick6.jpeg";
-import "./Products.css";
-
-const products = [
-  { image: lipstick4, name: "Crimson Kiss", price: "$19.99" },
-  { image: lipstick, name: "Velvet Rouge", price: "$22.99" },
-  { image: lipstick3, name: "Blush Bloom", price: "$18.50" },
-  { image: lipstick6, name: "Berry Charm", price: "$21.00" },
-  { image: lipstick5, name: "Peach Passion", price: "$20.50" },
-  { image: lipstick2, name: "Ruby Rush", price: "$23.75" },
-];
+import React from 'react';
+import nailpolish from "../../../../src/Gallery/Book.jpeg";
 
 export default function Products() {
   return (
-    <div id='/Products' className="py-20 px-6 md:px-20 bg-red-200">
-      <h1 className="text-5xl md:text-6xl font-bold text-center mb-12 text-red-50 textshadow">
-        Best Lipsticks
-      </h1>
+    <div
+      id="/Products"
+      className="bg-gradient-to-br from-[#7a6908] via-[#6b4a03] to-neutral-950 py-20 px-6 md:px-20"
+    >
+      <div className="lg:flex items-center justify-center gap-12">
 
-      {/* Adding <marquee> tag */}
-      <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
-        <div className="flex gap-8">
-          {products.map((product, index) => (
-            <div key={index} className="bg-red-50 shadow-lg rounded-xl flex-shrink-0 hover:scale-105 transition-transform duration-300">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="h-40 md:h-60 w-full object-cover rounded-t-md"
-              />
-              <div className='px-6 py-5'>
-                <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                  {product.name}
-                </h2>
-                <p className="text-gray-600 font-bold mb-4">{product.price}</p>
-                <Link to='/Contact' smooth={true} duration={1000}>
-                  <button className="bg-red-300 textshadow text-white px-6 py-2 rounded-full hover:bg-red-400 transition-all">
-                    Order Now
-                  </button>
-                </Link>
-              </div>
-            </div>
-          ))}
+        {/* Image */}
+        <div className="flex items-center justify-center">
+          <img
+            src={nailpolish}
+            alt="How To Find Love Book"
+            className="w-[500px] object-contain shadow-2xl rounded-md"
+          />
         </div>
-      </marquee>
+
+        {/* Text Content */}
+        <div className="text-center md:text-left">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-100 mb-4 textshadow">
+            How To Find Love
+          </h2>
+
+          <p className="text-xl md:text-2xl text-neutral-200 max-w-md mb-4">
+            A Master’s Guide To Finding Your Soulmate. Guaranteed!  
+            <br />
+            <span className="italic text-neutral-300">
+              by Psychic Billy Caputo
+            </span>
+          </p>
+
+          {/* Price */}
+          <p className="text-3xl font-semibold text-white mb-6">
+            $4.99 <span className="text-lg font-normal text-neutral-300">USD</span>
+          </p>
+
+          {/* CTA */}
+          <a
+            href="https://www.paypal.com/ncp/payment/T54G287MTFMD8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-neutral-100 text-neutral-800 textshadow text-xl font-semibold px-10 py-3 rounded-full hover:bg-neutral-800 hover:text-neutral-100 transition-all">
+              Buy Now
+            </button>
+          </a>
+        </div>
+
+      </div>
     </div>
   );
 }
