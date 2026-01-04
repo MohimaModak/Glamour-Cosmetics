@@ -12,7 +12,7 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto text-center">
         {/* Header Section */}
         <div className="mb-12">
-          <h2 className="text-5xl font-bold text-neutral-100 textshadow">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-100 textshadow">
             Contact Billy Caputo
           </h2>
           <p className="mt-4 text-lg text-neutral-100 font-medium">

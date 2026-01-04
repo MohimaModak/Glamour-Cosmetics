@@ -19,7 +19,7 @@ export default function Nailpolish() {
 
         {/* Text Content */}
         <div className=' text-center md:text-left'>
-          <h2 className='text-4xl md:text-5xl font-bold text-neutral-100 mb-6 textshadow'>
+          <h2 className='text-4xl md:text-5xl font-bold text-neutral-100 mb-6 textshadow pt-6'>
             Billy Caputo
             <br />
             <p className='text-xl md:text-2xl text-neutral-200 mt-2'>(Psychic & Relationship Guide)</p>
@@ -29,7 +29,7 @@ export default function Nailpolish() {
 
           </p>
           <Link to='/Contact' smooth={true} duration={1000}>
-            <button className="bg-neutral-100 text-neutral-800 textshadow text-xl font-semibold px-10 py-3 rounded-full hover:bg-neutral-800 hover:text-neutral-100 transition-all">
+            <button className="bg-neutral-100 text-neutral-800 textshadow text-xl font-semibold px-7 py-2 lg:px-10 lg:py-3 rounded-full hover:bg-neutral-800 hover:text-neutral-100 transition-all">
               Contact
             </button>
           </Link>

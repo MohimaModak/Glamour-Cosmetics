@@ -20,7 +20,7 @@ export default function Products() {
 
         {/* Text Content */}
         <div className="text-center md:text-left">
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-100 mb-4 textshadow">
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-100 mb-6 textshadow pt-6">
             How To Find Love
           </h2>
 
@@ -43,7 +43,7 @@ export default function Products() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-neutral-100 text-neutral-800 textshadow text-xl font-semibold px-10 py-3 rounded-full hover:bg-neutral-800 hover:text-neutral-100 transition-all">
+            <button className="bg-neutral-100 text-neutral-800 textshadow text-xl font-semibold px-7 py-2 lg:px-10 lg:py-3 rounded-full hover:bg-neutral-800 hover:text-neutral-100 transition-all">
               Buy Now
             </button>
           </a>
