@@ -18,7 +18,7 @@
   
   .nav-item.active-link {
     background-color: rgb(1, 1, 71);
-        transform: scale(1.1);
+    transform: scale(1.1);
   }
   
   .mobile-menu {
@@ -27,7 +27,7 @@
     right: -250px;
     width: 250px;
     height: 100%;
-    background-color: rgb(66, 46, 2);
+    background-color: rgb(19, 2, 2);
     transition: right 0.3s ease-in-out;
     z-index: 1000;
     padding-top: 50px;
@@ -56,9 +56,9 @@
     cursor: pointer;
   }
 
-  .text{
+  /* .text{
     text-shadow: 1.3px 1.5px 2.5px rgb(0, 0, 0);
-  }
+  } */
 
   .bg{
     /* background-color: rgb(1, 1, 71); */

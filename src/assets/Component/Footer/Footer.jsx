@@ -8,7 +8,7 @@ export default function Footer() {
 
         {/* Brand */}
         <div>
-          <h2 className="text-2xl lg:text-3xl font-semibold text-white mb-4 tracking-wide">
+          <h2 className="text-2xl lg:text-3xl font-semibold text-red-400 mb-4 tracking-wide">
             Billy Caputo
           </h2>
           <p className="text-base leading-relaxed">
@@ -19,7 +19,7 @@ export default function Footer() {
 
         {/* Navigation */}
         <div>
-          <h3 className="text-2xl lg:text-3xl font-semibold text-white mb-4">
+          <h3 className="text-2xl lg:text-3xl font-semibold text-red-400 mb-4">
             Quick Links
           </h3>
           <ul className="space-y-3 text-sm">
@@ -43,14 +43,14 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h3 className="text-2xl lg:text-3xl font-semibold text-white mb-4">
+          <h3 className="text-2xl lg:text-3xl font-semibold text-red-400 mb-4">
             Contact
           </h3>
           <p className="text-sm mb-2">
             Phone: <a href="tel:2013155587" className="hover:text-white transition">201-315-5587</a>
           </p>
           <p className="text-sm mb-4">
-            Email: <span className="text-gray-300">gash66@aol.com
+            Email: <span className="text-gray-300">billy@billycaputo.com
             </span>
           </p>
 

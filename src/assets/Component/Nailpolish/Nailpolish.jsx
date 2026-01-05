@@ -5,7 +5,8 @@ import { Link } from 'react-scroll';
 
 export default function Nailpolish() {
   return (
-    <div id='/Nailpolish' className='bg-gradient-to-tr from-[#7a6908] via-[#6b4a03] to-neutral-950 py-20 px-6 md:px-20'>
+    // <div id='/Nailpolish' className='bg-gradient-to-tr from-[#7a6908] via-[#6b4a03] to-neutral-950 py-20 px-6 md:px-20'>
+    <div id='/Nailpolish' className='bg-gradient-to-bl to-neutral-900 from-[#7e1212] via-[#530404] py-20 px-6 md:px-20'>
       <div className='lg:flex items-center justify-center gap-12'>
 
 
@@ -29,9 +30,10 @@ export default function Nailpolish() {
 
           </p>
           <Link to='/Contact' smooth={true} duration={1000}>
-            <button className="bg-neutral-100 text-neutral-800 textshadow text-xl font-semibold px-7 py-2 lg:px-10 lg:py-3 rounded-full hover:bg-neutral-800 hover:text-neutral-100 transition-all">
-              Contact
-            </button>
+            <button className="bg-red-500 text-neutral-100 px-8 py-3 lg:px-10 lg:py-4 rounded-full text-lg lg:text-xl font-semibold
+           hover:bg-red-100 hover:text-black transition-all shadow-lg">
+            Contact Now
+          </button>
           </Link>
         </div>
       </div>

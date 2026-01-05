@@ -5,7 +5,7 @@ export default function Products() {
   return (
     <div
       id="/Products"
-      className="bg-gradient-to-br from-[#7a6908] via-[#6b4a03] to-neutral-950 py-20 px-6 md:px-20"
+      className="bg-gradient-to-br from-neutral-900 to-[#7e1212] via-[#530404] mt-8 py-20 px-6 md:px-20"
     >
       <div className="lg:flex items-center justify-center gap-12">
 
@@ -20,33 +20,37 @@ export default function Products() {
 
         {/* Text Content */}
         <div className="text-center md:text-left">
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-100 mb-6 textshadow pt-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-red-100 mb-6 textshadow pt-6">
             How To Find Love
           </h2>
 
           <p className="text-xl md:text-2xl text-neutral-200 max-w-md mb-4">
-            A Master’s Guide To Finding Your Soulmate. Guaranteed!  
+            Stop wasting time and money on dating sites.
+            This book shows a clear, focused path to finding love.
+            <br />
             <br />
             <span className="italic text-neutral-300">
-              by Psychic Billy Caputo
+              Written by Psychic <span className='font-bold text-red-400'>Billy Caputo </span> 
+               Helping people with love & relationship guidance for years
             </span>
           </p>
 
           {/* Price */}
           <p className="text-3xl font-semibold text-white mb-6">
-            $4.99 <span className="text-lg font-normal text-neutral-300">USD</span>
+            $4.99 <span className="text-lg font-bold text-red-400">USD</span>
           </p>
 
           {/* CTA */}
-          <a
-            href="https://www.paypal.com/ncp/payment/T54G287MTFMD8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="bg-neutral-100 text-neutral-800 textshadow text-xl font-semibold px-7 py-2 lg:px-10 lg:py-3 rounded-full hover:bg-neutral-800 hover:text-neutral-100 transition-all">
-              Buy Now
-            </button>
-          </a>
+         <a
+          href="https://www.paypal.com/ncp/payment/T54G287MTFMD8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-red-500 text-neutral-100 px-8 py-3 lg:px-10 lg:py-4 rounded-full text-lg lg:text-xl font-semibold
+           hover:bg-red-100 hover:text-black transition-all shadow-lg">
+            Buy Now
+          </button>
+        </a>
         </div>
 
       </div>
