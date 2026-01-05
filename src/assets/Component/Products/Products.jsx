@@ -5,7 +5,7 @@ export default function Products() {
   return (
     <div
       id="/Products"
-      className="bg-gradient-to-br from-neutral-900 via-[#530404] to-[#7e1212]  mt-8 py-20 px-6 md:px-20"
+      className="bg-gradient-to-br from-neutral-900 via-[#530404] to-[#7e1212] mt-8 py-20 px-6 md:px-20"
     >
       <div className="lg:flex items-center justify-center gap-12">
 

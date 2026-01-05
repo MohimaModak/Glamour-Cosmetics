@@ -5,11 +5,8 @@ import { Link } from 'react-scroll';
 
 export default function Nailpolish() {
   return (
-    // <div id='/Nailpolish' className='bg-gradient-to-tr from-[#7a6908] via-[#6b4a03] to-neutral-950 py-20 px-6 md:px-20'>
     <div id='/Nailpolish' className='bg-gradient-to-bl  from-[#7e1212] via-[#530404] to-neutral-900 py-20 px-6 md:px-20'>
       <div className='lg:flex items-center justify-center gap-12'>
-
-
         <div className='flex items-center justify-center'>
           <img
             src={Author}
@@ -18,7 +15,7 @@ export default function Nailpolish() {
           />
         </div>
 
-        {/* Text Content */}
+
         <div className=' text-center md:text-left'>
           <h2 className='text-4xl md:text-5xl font-bold text-neutral-100 mb-6 textshadow pt-6'>
             Billy Caputo
