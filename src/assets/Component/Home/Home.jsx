@@ -1,7 +1,7 @@
-import React from 'react'
-import background from "../../../../src/Gallery/cover3.jpg"
+// import React from 'react'
+// import background from "../../../../src/Gallery/cover3.jpg"
 import "./Home.css"
-// import FeatureProduct from '../FeatureProduct/FeatureProduct'
+import FeatureProduct from '../FeatureProduct/FeatureProduct'
 import Products from '../Products/Products'
 // import Makeup from '../Makeup/Makeup'
 import Mascara from '../mascara/mascara'
@@ -31,8 +31,8 @@ export default function Home() {
       <Nailpolish></Nailpolish>
       {/* <Makeup></Makeup> */}
       <Contact></Contact>
-            <Mascara></Mascara>
-
+      {/* <Mascara></Mascara> */}
+      <FeatureProduct></FeatureProduct>
       <Footer></Footer>
     </div>
   )
