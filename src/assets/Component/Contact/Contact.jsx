@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div
       id="/Contact"
-      className="bg-gradient-to-br from-neutral-900 to-[#7e1212] via-[#530404] py-16 px-4 sm:px-6 lg:px-8"
+      className="bg-gradient-to-br from-neutral-900 via-[#530404] to-[#7e1212]  py-16 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-5xl mx-auto text-center">
         {/* Header Section */}

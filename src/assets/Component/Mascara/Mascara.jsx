@@ -4,7 +4,7 @@ export default function Mascara() {
   return (
     <section
       id="/Mascara"
-      className="bg-gradient-to-bl to-neutral-900 from-[#7e1212] via-[#530404] py-20 px-6 md:px-20"
+      className="bg-gradient-to-bl from-[#7e1212]   via-[#530404] to-neutral-900 py-20 px-6 md:px-20"
     >
       <div className="max-w-4xl mx-auto text-center text-neutral-100">
 
@@ -35,7 +35,7 @@ export default function Mascara() {
         </div>
 
         {/* CTA Button */}
-         <a
+        <a
           href="https://www.paypal.com/ncp/payment/T54G287MTFMD8"
           target="_blank"
           rel="noopener noreferrer"
