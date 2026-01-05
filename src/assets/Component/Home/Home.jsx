@@ -1,10 +1,6 @@
-// import React from 'react'
-// import background from "../../../../src/Gallery/cover3.jpg"
 import "./Home.css"
 import FeatureProduct from '../FeatureProduct/FeatureProduct'
 import Products from '../Products/Products'
-// import Makeup from '../Makeup/Makeup'
-import Mascara from '../mascara/mascara'
 import Nailpolish from '../Nailpolish/Nailpolish'
 import Footer from '../Footer/Footer'
 import Contact from '../Contact/Contact'
@@ -26,12 +22,9 @@ export default function Home() {
           </div>
         </div> */}
       </div>
-      {/* <FeatureProduct></FeatureProduct> */}
       <Products></Products>
       <Nailpolish></Nailpolish>
-      {/* <Makeup></Makeup> */}
       <Contact></Contact>
-      {/* <Mascara></Mascara> */}
       <FeatureProduct></FeatureProduct>
       <Footer></Footer>
     </div>
